@@ -1,0 +1,136 @@
+/* kellum image replacement, http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+
+.replace  {
+	display: block;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/ */
+/* blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* basic CSS sprites */
+
+a.sprite:link, a.sprite:visited { background-position: left top; }
+a.sprite:hover, a.sprite:active { background-position: left bottom; }
+
+/*
+**
+*/
+
+.sotd-archive {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.sotd-archive h1, .sotd-archive h2, .sotd-archive h3, .sotd-archive h4, .sotd-archive h5, .sotd-archive h6 {
+	clear: left;
+}
+
+.sotd-archive-item {
+	position: relative;
+	float: left;
+	margin: 5px;
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	color: #FFFFFF;
+	background: #DDDDDD url(../_images/loading.gif) center center no-repeat;
+}
+
+.sotd-archive-front {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	height: 130px;
+}
+
+.sotd-archive-front img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	height: 130px;
+}
+
+.sotd-archive-back {
+	display: block;
+	position: absolute;
+	top: 130px;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+	border: 0;
+	padding: 10px 8px;
+	width: 114px;
+	height: 110px;
+	color: #FFFFFF;
+	background: #808080;
+	overflow: hidden;
+	text-align: center;
+}
+
+.sotd-archive-back a {
+	color: #FFFFFF !important; /* !important added by JAK to prevent the template CSS from making these links red */
+	text-decoration: underline;
+}
+
+.sotd-archive-date {
+	display: block;
+	margin: 0 0 1em 0;
+	font-weight: bold;
+}
+
+.sotd-archive-common-name {
+	display: block;
+	margin: 0 0 1em 0;
+	font-weight: normal;
+}
+
+.sotd-archive-scientific-name {
+	display: block;
+	font-weight: normal;
+}
+
+.sotd-archive-common-name .latin, .sotd-archive-scientific-name .latin {
+	font-style: italic;
+}
+
+/*
+**
+*/
+
+.sotd-archive-css3 .sotd-archive-back {
+	-webkit-transition: top 0.25s ease;
+	-moz-transition: top 0.25s ease;
+	-o-transition: top 0.25s ease;
+	transition: top 0.25s ease;
+}
+
+.sotd-archive-css3 .sotd-archive-item.flipped .sotd-archive-back {
+	top: 0;
+}

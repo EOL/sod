@@ -1,0 +1,175 @@
+/* kellum image replacement, http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+
+.replace  {
+	display: block;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/ */
+/* blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* basic CSS sprites */
+
+a.sprite:link, a.sprite:visited { background-position: left top; }
+a.sprite:hover, a.sprite:active { background-position: left bottom; }
+
+/*
+**
+*/
+
+.sotd-widget {
+	margin: 20px 0;
+	border: 1px solid #000;
+	width: 212px;
+	
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	color: white;
+	background: #818d9b;
+	text-align: center;
+}
+
+.sotd-widget-loading  {
+	display: block;
+	margin: 10px auto;
+	width: 43px;
+	height: 20px;
+	background: url(../_images/loading.gif) left top no-repeat;
+}
+
+.sotd-widget-error {
+	margin: 10px 0;
+}
+
+.sotd-widget a {
+	text-decoration: none;
+	color: white !important; /* !important added by JAK to prevent white links from being overriden by blue link CSS. */
+}
+
+.sotd-widget a:hover {
+	text-decoration: underline;
+}
+
+.sotd-widget-inner {
+	margin: 6px 6px 0px;
+	padding-bottom: 10px;
+	background: #394651;
+	text-align: left;
+}
+
+.sotd-widget-eol-logo {
+	padding: 10px 0;
+	width: 100%;
+	height: 17px;
+	background-color: #394651;
+	background-position: center center;
+	background-image: url(../_images/logo_eol.png);
+}
+
+.sotd-widget-thumbnail {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+.sotd-widget-metadata {
+	padding: 10px;
+}
+
+.sotd-widget-common-name  {
+	display: block;
+	font-size: 1.09090909em;
+	font-weight: bold;
+}
+
+.sotd-widget-scientific-name {
+	display: block;
+	font-size: 1.09090909em;
+}
+
+.sotd-widget-common-name .latin, .sotd-widget-scientific-name .latin {
+	font-style: italic;
+}
+
+.sotd-widget-description {
+	display: block;
+}
+
+.sotd-widget-nominate {
+	display: block;
+	color: white;
+	text-align: center;
+}
+
+.sotd-widget-prev {
+	float: left;
+	margin: 10px 0 10px 6px;
+	width: 43px;
+	height: 20px;
+	background-image: url(../_images/btn_prev.png);
+	background-position: bottom left;
+}
+
+.sotd-widget-prev.disabled {
+	background-position: top left;
+	cursor: default;
+}
+
+.sotd-widget-next {
+	float: right;
+	margin: 10px 6px 10px 0;
+	width: 43px;
+	height: 20px;
+	background-image: url(../_images/btn_next.png);
+	background-position: bottom left;
+}
+
+.sotd-widget-next.disabled {
+	background-position: top left;
+	cursor: default;
+}
+
+.sotd-widget-archive {
+	display: inline-block;
+	margin-top: 13px;
+	text-align: center;
+	font-size: 0.9090909090em;
+	text-decoration: none;
+}
+
+.sotd-widget-si-logo {
+	margin-top: 10px;
+	padding: 6px 21px;
+	width: 170px;
+	height: 21px;
+	background-color: black;
+	background-image: url(../_images/logo_si.png);
+}
+
+/*
+**
+*/
+
+.sotd-widget .highslide img {
+	border: 0;
+}

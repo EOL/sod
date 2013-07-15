@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>widget</title>
+<!-- Meta tags for the new SOD widget -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="imagetoolbar" content="false" />
+<!-- End of meta tags for the new SOD widget -->
+</head>
+
+<body>
+<!-- Start of new SOD -->
+<div id='widget' class='sotd-widget'>
+  <div class='sotd-widget-inner'> <span class='sotd-widget-eol-logo replace'>EOL Species of the Day</span> </div>
+  <a href="http://www.si.edu" class='sotd-widget-si-logo replace'>Smithsonian Institution</a> </div>
+<script src="sod/_js/jquery.js"></script> 
+<script src="sod/_highslide/highslide-full.min.js"></script> 
+<script type="text/javascript">
+		hs.graphicsDir = 'sod/_highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.outlineType = 'rounded-white';
+		hs.fadeInOut = true;
+		hs.numberPosition = 'caption';
+		hs.dimmingOpacity = 0.75;
+		
+		hs.addSlideshow({
+			interval: 5000,
+			repeat: false,
+			useControls: true,
+			fixedControls: true,
+			overlayOptions: {
+				opacity: 1,
+				position: 'bottom center',
+				hideOnMouseOut: true
+			}
+		});
+	</script> 
+<script src="sod/_js/SOTD.js"></script> 
+<script>
+		$(document).ready(function () {
+			$("#widget").sotd({
+			});
+		});
+	</script> 
+<!-- End of new SOD -->
+</body>
+</html>
